@@ -1,0 +1,50 @@
+* {
+  border: solid #E5E7EB;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    #fe7630,
+    #ffc711
+  );
+}
+*/
+
+.card-container {
+  position: relative;
+  left: 10%;
+  width: 80vw;
+  height: 70vh;
+  margin: 15vh 0vh;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 5px 5px rgb(146, 146, 146), -1em 0 .4em rgb(73, 73, 73);
+}
+
+div>#card-image {
+  width: max(10vw, 50%);
+  height: max(20vw, 75%);
+}
+
+div>.sign-up-container {
+  padding: 2%;
+}
+input {
+  width: 1;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form>div {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+

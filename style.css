@@ -1,19 +1,22 @@
 * {
-  border: solid #E5E7EB;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*
+
 body {
   background-image: linear-gradient(
     to bottom right,
-    #fe7630,
-    #ffc711
+    #ffd026,
+    #c69721
   );
 }
-*/
+
+.sign-up-container>p, .sign-up-container>h4 {
+  font-size: 20px;
+  margin: 4% 0%;
+}
 
 .card-container {
   position: relative;
@@ -24,7 +27,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px;
-  box-shadow: 5px 5px rgb(146, 146, 146), -1em 0 .4em rgb(73, 73, 73);
+  background: linear-gradient(#f19a2f, #d56f0f);
+  box-shadow: 5px 5px rgb(149, 89, 25), -1em 0 .4em rgb(106, 64, 10);
+  color: white;
 }
 
 div>#card-image {
@@ -33,7 +38,7 @@ div>#card-image {
 }
 
 div>.sign-up-container {
-  padding: 2%;
+  padding: 3%;
   width: 60%;
 }
 
@@ -46,6 +51,5 @@ form {
 form>div {
   display: flex;
   flex-direction: column;
-  min-width: 20vw;
+  min-width: 18vw;
 }
-

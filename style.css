@@ -1,6 +1,6 @@
+@import url(./meyers.css);
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -36,9 +36,12 @@ body {
   font-family: 'Vazirmatn', sans-serif;
 }
 
+div.img-container {
+  width: 40%;}
+
 div>#card-image {
-  max-width: 40%;
-  flex-shrink: 0;
+  width: 100%;
+  min-height: 100%;
   border-radius: 20px 0 0 20px;
 }
 
@@ -46,6 +49,40 @@ div>.sign-up-container {
   margin-top: 4%;
   padding: 3%;
   width: 60%;
+}
+
+@media(max-width: 700px){
+  .card-container {
+    position: relative;
+    left: 10%;
+    width: 80vw;
+    height: 140vh;
+    margin: 10vh 0vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background: rgb(247, 239, 224);
+    box-shadow: 5px 5px rgb(208, 155, 41), 1em 0.5em 5em rgb(60, 109, 235);
+    color: rgb(53, 60, 97);
+    font-family: 'Vazirmatn', sans-serif;
+  }
+  
+  div.img-container {
+    width: 100%;
+  }
+  
+  div>#card-image {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  div>.sign-up-container {
+    margin-top: 4%;
+    padding: 3%;
+    width: 100%;
+  }
 }
 
 form {
@@ -95,10 +132,15 @@ button {
   font-family: 'Sarala', sans-serif;
 }
 
+button:active {
+  background-color: rgb(92, 110, 198);
+}
+
 .sign-up-container>button {
   margin-top: 0.25rem;
-  width: 10rem;
-  padding: 1% 1%;
+  width: 12rem;
+  padding: 1% 2%;
+  font-size: 1.1rem;
 }
 .sign-in-check {
   margin-top: 1rem;
@@ -107,5 +149,4 @@ button {
 .sign-in-check>button {
   font-size: 0.75rem;
   width: 5rem;  
-  
 }

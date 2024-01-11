@@ -32,7 +32,7 @@ body {
   border-radius: 20px;
   background: rgb(247, 239, 224);
   box-shadow: 5px 5px rgb(208, 155, 41), 1em 0.5em 5em rgb(60, 109, 235);
-  color: rgb(73, 75, 85);
+  color: rgb(53, 60, 97);
   font-family: 'Vazirmatn', sans-serif;
 }
 
@@ -85,4 +85,27 @@ input:focus {
 div>label::after {
   color: rgb(216, 41, 41);
   content: "*";
+}
+
+button {
+  color: white;
+  border: none;
+  background-color: rgb(123, 140, 222);
+  border-radius: 1rem;
+  font-family: 'Sarala', sans-serif;
+}
+
+.sign-up-container>button {
+  margin-top: 0.25rem;
+  width: 10rem;
+  padding: 1% 1%;
+}
+.sign-in-check {
+  margin-top: 1rem;
+}
+
+.sign-in-check>button {
+  font-size: 0.75rem;
+  width: 5rem;  
+  
 }

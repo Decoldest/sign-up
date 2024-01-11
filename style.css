@@ -4,12 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
 
 body {
   background-image: linear-gradient(
     to bottom right,
-    #ffd026,
-    #c69721
+    #aedcff,
+    #98c1ff
   );
 }
 
@@ -26,15 +29,17 @@ body {
   margin: 10vh 0vh;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 10px;
-  background: linear-gradient(#f19a2f, #d56f0f);
-  box-shadow: 5px 5px rgb(149, 89, 25), -1em 0 .4em rgb(106, 64, 10);
-  color: white;
+  border-radius: 20px;
+  background: rgb(247, 239, 224);
+  box-shadow: 5px 5px rgb(208, 155, 41), 1em 0.5em 5em rgb(60, 109, 235);
+  color: rgb(73, 75, 85);
+  font-family: 'Sarala', sans-serif;
 }
 
 div>#card-image {
   max-width: 40%;
-  height: auto;
+  flex-shrink: 0;
+  border-radius: 20px 0 0 20px;
 }
 
 div>.sign-up-container {
@@ -52,4 +57,6 @@ form>div {
   display: flex;
   flex-direction: column;
   min-width: 18vw;
+  margin: 2% 0%;
+  font-size: .875rem
 }

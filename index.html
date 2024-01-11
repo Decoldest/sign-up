@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Sarala&family=Vazirmatn:wght@500&display=swap" rel="stylesheet">
-
+  <script src="app.js" defer></script>
   <title>Sign Up</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
       <h1>What are you doing in my swamp?
       </h1>
       <h4>Let's Do This</h4>
-      <form action="" method="post">
+      <form action="" method="post" onsubmit ="return verifyPassword()">
         <div>
           <label for="firstname">First Name</label>
           <input type="text" id="firstname" name="firstname" required>
@@ -45,11 +45,12 @@
           <label for="confirm">Confirm Password</label>
           <input type="password" id="confirm" name="confirm" required>
         </div>
+        <button id="submit" type="submit">Create Account</button>
+        <span id="password-check"></span>
       </form>
-      <button type="submit">Create Account</button>
       <div class="sign-in-check">
         <span>Already have an account?</span>
-        <button type="button">Sign in</button>
+        <button id="sign-in" type="button">Sign in</button>
       </div>
     </div>
   </div>

@@ -34,7 +34,7 @@ body {
   box-shadow: 5px 5px rgb(208, 155, 41), 1em 0.5em 5em rgb(60, 109, 235);
   color: rgb(53, 60, 97);
   font-family: 'Vazirmatn', sans-serif;
-  min-width: 300px;
+  min-width: 500px;
 }
 
 div.img-container {
@@ -84,8 +84,8 @@ div>.sign-up-container {
     position: relative;
     width: 90%;
     height: auto;
-    left: 20%;
-    top: 20%;
+    left: 5%;
+    top: 5%;
   }
   
   div>.sign-up-container {
